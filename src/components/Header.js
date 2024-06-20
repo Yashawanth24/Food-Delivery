@@ -11,19 +11,19 @@ const Header = () => {
 
   return (
     <div className="flex justify-between items-center bg-rose-100 px-4 py-2">
-      {/* Logo */}
+    
       <div>
-        <img className="w-34 rounded-lg" src='./image/logo.jpg' alt="Logo" />
+        <img className="w-36 rounded-lg" src='./image/logo.jpg' alt="Logo" />
       </div>
 
-      {/* Navigation and Actions */}
+    
       <div className="flex items-center space-x-4">
-        {/* Online Status */}
+  
         <span className="text-sm">
           Online Status: {onlineStatus ? "🟢" : "🔴"}
         </span>
 
-        {/* Navigation Links */}
+     
         <ul className="flex items-center space-x-4">
           <li>
             <Link to="/" className="text-gray-800 hover:text-gray-500 font-bold">
