@@ -5,7 +5,7 @@ import useOnlineStatus from './useOnlineStatus';
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const [loginText, setLoginText] = useState("LOGIN");
+ 
   const onlineStatus = useOnlineStatus();
   const cartItems = useSelector((store) => store.cart.items);
 
