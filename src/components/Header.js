@@ -13,7 +13,7 @@ const Header = () => {
     <div className="flex justify-between items-center bg-rose-100 px-4 py-2">
       {/* Logo */}
       <div>
-        <img className="w-48 rounded-lg" src='./image/logo.jpg' alt="Logo" />
+        <img className="w-34 rounded-lg" src='./image/logo.jpg' alt="Logo" />
       </div>
 
       {/* Navigation and Actions */}
