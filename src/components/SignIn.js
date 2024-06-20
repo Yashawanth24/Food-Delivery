@@ -35,10 +35,10 @@ setpassword(e.target.value)
       {
         signin ?(
         <div className='flex justify-center items-center h-screen'> 
-          <h1 className='text-6xl font-extrabold text-center text-green-700'>SignIn Succesful...</h1>
+          <h1 className='text-5xl font-extrabold text-center text-green-700'>SignIn Succesful...</h1>
         </div>
       ):(
-    <div style={{ position: 'relative', height: '78vh', backgroundColor: '#f0f0f0' }}>
+    <div style={{ position: 'relative', height: '100vh', backgroundColor: '#f0f0f0' }}>
       <form
         style={{
           position: 'absolute',
