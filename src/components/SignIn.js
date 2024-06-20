@@ -8,6 +8,7 @@ const SignIn = () => {
   console.log(totalPrice);
   const [password ,setpassword]=useState('')
   const [username ,setusername]=useState('')
+  const [signin,setSignin]=useState(false)
 
   const handleusername=(e)=>{
  setusername(e.target.value);
@@ -18,7 +19,11 @@ setpassword(e.target.value)
   
   const handleSingIn=()=>{
     if(username==='Demo123' && password==='Demo@321'){
-      navigator('/');}
+      setSignin(true)
+      setTimeout(()=>{
+        navigator('/');
+      },2000)
+    }
       else{
  alert('Invalid UserName Or Password')
       }
@@ -26,6 +31,13 @@ setpassword(e.target.value)
   
 
   return (
+<div>
+      {
+        signin ?(
+        <div className='flex justify-center items-center h-screen'> 
+          <h1 className='text-6xl font-extrabold text-center text-green-700'>SignIn Succesful...</h1>
+        </div>
+      ):(
     <div style={{ position: 'relative', height: '78vh', backgroundColor: '#f0f0f0' }}>
       <form
         style={{
@@ -90,6 +102,8 @@ setpassword(e.target.value)
           Sign In
         </button>
       </form>
+      </div>
+      )}
     </div>
   );
 };
